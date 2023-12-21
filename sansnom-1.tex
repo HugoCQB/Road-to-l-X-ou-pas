@@ -2,18 +2,16 @@
 \usepackage[utf8]{inputenc}
 \usepackage{enumitem}
 \usepackage{amsmath}
+\usepackage[normalem]{ulem}
+\usepackage{eurosym}
 
-\title{Cours de maths synthétique (pour CCINP)}
+\title{Cours de maths synthétique (pour \sout{X/ENS} CCINP/CENTRALE/MINES)}
+
+\author{sous "la direction lol" de Hugo BECKER et Mohamad MIDAEV facturé 12\euro 80}
 
 \begin{document}
 
 \maketitle
-
-\tableofcontents
-
-\chapter{Algèbre}
-
-\section{Propriétés sur les inverses d'une matrice}
 
 \begin{itemize}[label=$\ast$]
     	\item Deux matrices diagonales commutent
@@ -28,19 +26,45 @@
 	\item Soit H un SEV de E. Alors H est un hyperplan de E ssi il existe une droite vectorielle D telle que \(E = H \oplus D \)
 	\item \underline{Théorème de la base incomplète} : Toute famille libre fini d'un EV de dimension fini peut être complété en une base de cet EV
 	\item \underline{Théorème de la base extraite} : Toutes familles génératrice finie d'un EV fini on peut extraire une base de cet EV
+	\item \( dim(E \times F) = dim(E) + dim(F) \)
+	\item \( dim(E \oplus F) = dim(E) + dim(F) \)
+	\item \( dim(F + G) = dim(F) + dim(G) - dim(F \cap G) \)
+	\item \underline{Théorème du rang} : dim(E)  = rg(u) + dim(Ker u)
+	\item Soit E et F deux EV de même dimensions finie. On a que \(u \in L(E,F) \) on a : \( u surjective \Leftrightarrow u injective \Leftrightarrow u bijective \)
+	\item \(dim L(E,F) = dim(E) \times dim(F) \)
+	\item \( H hyperplan de E \leftrightarrow dim(H) = dim(E)-1 \)
+	\item 	\( Mat_B(v \circ u) = Mat_B(v)Mat_B(u) \)
+	\item dim(Ker A) + rg(A) = p avec \(A \in M_{n,p}(K)\)
+	\item Une matrice carré \( A \in M_n(K) \) est inversible ssi rg(A) = n
+	\item Une matrice carré \( A \in M_n(K) \) est inversible ssi \( \forall X \in K^n AX=0 \rightarrow X=0 \)
+	\item Si (A,B) \( \in M_n(K)^2 \) vérifient \(AB = I_n\), alors A et B sont inversibles et inverse l'une de l'autre
+	\item Une matrice est de rang ri ssi elle est équivalente à la matrice \( J_r \)
+	\item Deux matrices de même taille sont équivalentes ssi elles ont même rang
+	\item Une matrice et sa transposée ont même rang
+	\item une sous matrice de A a un rang inférieur à A
+	\item tr(AB) = tr(BA)
+	\item Deux matrices semblables ont la même trace
+	\item \(tr(v \circ u) = tr(u \circ v) \)
+	\item la trace d'un projecteur est égal à son rang
+	\item \underline{inégalité triangulaire} : \( \|a + b\| \leq \|a\| + \|b\| \)
+	\item \underline{théorème de pythagore} : \( \|x + y\| = \|x\| + \|y\| \) ssi x et y sont orthogonaux
+	\item Toute famille orthogonale de vecteurs non nuls de E est libre, en particulier, toute famille orthonormée de E est libre
+	\item Toute espace euclidien possède une base orthonormée
+	\item \underline{Théorème de la base orthonormée incomplète} : Toute famille orthonormée de E peut être complétée en une base orthonormée de E
+	\item Si deux endomorphismes commutent, les sous espaces propres de l'un sont stable par l'autre
+	\item Si \( (\lambda_i)_{i \in I} \) est une famille finie de valeurs propres de u deux à deux distinctes, alors les sous espaces propres associées \(E_{\lambda_{i}}(u)\) , pour \(i \in I \) , sont en somme directe.
+	\item  Toutes famille de vecteurs propres associées à des valeurs propres deux à deux distinctes est libre
+	\item Deux matrices semblambles ont le même spectre et les sous-espaces propres associés sont de même dimension
+	\item Si A est une matrice triangulaire, alors l'ensemble de ses valeurs propres est sa diagonale
+	\item Un scalaire \( \lambda \in K \) est une valeur propre de A ssi il est racine du polynôme caractéristique de A
+	\item on a pour tout \( \lambda \in Sp(u) \) : \( 1 \leq dim(E_{\lambda}(u) \leq m(\lambda) \)
+	\item Si le polynôme caractéristique de u est scindé à racines simples, alors u est diagonalisable
+	\item \underline{Théorème de Cayley-Hamilton} : Le plynôme caractéristique de u annule u
+	\item Un endomorphisme 
+
 \end{itemize}
 
-\subsection{}
 
-Ceci est une sous-section, qui est une division plus petite d'une section.
-
-\chapter{Développement}
-
-Ceci est le second chapitre. Vous pouvez y développer votre sujet principal.
-
-\section{Une Autre Section}
-
-Chaque chapitre peut avoir plusieurs sections.
 
 \end{document}
 
