@@ -30,7 +30,7 @@
 	\item \( dim(E \oplus F) = dim(E) + dim(F) \)
 	\item \( dim(F + G) = dim(F) + dim(G) - dim(F \cap G) \)
 	\item \underline{Théorème du rang} : dim(E)  = rg(u) + dim(Ker u)
-	\item Soit E et F deux EV de même dimensions finie. On a que \(u \in L(E,F) \) on a : \( u surjective \Leftrightarrow u injective \Leftrightarrow u bijective \)
+	\item Soit E et F deux EV de même dimensions finie. On a que \(u \in L(E,F) \) on a :  u surjective \( \Leftrightarrow \) u injective \( \Leftrightarrow \) u bijective
 	\item \(dim L(E,F) = dim(E) \times dim(F) \)
 	\item \( H hyperplan de E \leftrightarrow dim(H) = dim(E)-1 \)
 	\item 	\( Mat_B(v \circ u) = Mat_B(v)Mat_B(u) \)
@@ -59,10 +59,36 @@
 	\item Un scalaire \( \lambda \in K \) est une valeur propre de A ssi il est racine du polynôme caractéristique de A
 	\item on a pour tout \( \lambda \in Sp(u) \) : \( 1 \leq dim(E_{\lambda}(u) \leq m(\lambda) \)
 	\item Si le polynôme caractéristique de u est scindé à racines simples, alors u est diagonalisable
-	\item \underline{Théorème de Cayley-Hamilton} : Le plynôme caractéristique de u annule u
+	\item \underline{Théorème de Cayley-Hamilton} : Le polynôme caractéristique de u annule u
 	\item Un endomorphisme 
 
+
 \end{itemize}
+
+\subsection{Caractérisations sur l'inversibilité d'une matrice}
+
+A est inversible \underline{SI ET SEULEMENT SI} : 
+\begin{itemize}[label=$\ast$]
+	\item A est de determinant nul
+	\item 0 n'est pas valeur propre de A
+	\item rg(A) = n
+	\item le système linéaire homogène AX = 0 a pour seule solution X = 0
+	\item Ker(A)= \{0\}
+	\item Il existe un polynôme annulateur de A dont 0 n'est pas racine
+
+\end{itemize}
+
+\subsection{Propriété sur la semblablilité de deux matrices}
+
+A et B sont semblables \underline{SI ET SEULEMENT SI} : 
+
+\begin{itemize}[label=$\ast$]
+	\item \( det(A) = det(B) \)
+	\item \( tr(A) = tr(B) \)
+	\item \( rg(A) = rg(B) \)
+\end{itemize}
+
+%Pour l'analyse faire la présentation des fonctions
 
 
 
