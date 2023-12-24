@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.23)  24 DEC 2023 15:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.12.23)  24 DEC 2023 20:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -156,28 +156,81 @@ Overfull \hbox (1.8617pt too wide) in paragraph at lines 33--34
 []$[]$ \OT1/cmr/m/n/10 : Toute famille or-thonorm^^See
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 4
-4.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 5
+0.
 (c:/texlive/2023/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 44.
- [3] [4] [5] [6]
-(./sansnom-2.aux)
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 50.
+ [3] [4] [5]
+Overfull \hbox (37.23358pt too wide) in paragraph at lines 143--144
+[]$[]$ \OT1/cmr/m/n/10 : Soit $(\OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 )[]$ une su
+ite arithm^^Setique.
+ []
+
+
+Overfull \hbox (29.94652pt too wide) in paragraph at lines 145--146
+[]$[]$ \OT1/cmr/m/n/10 : Soit $(\OML/cmm/m/it/10 u[]\OT1/cmr/m/n/10 )[]$ une su
+ite g^^Seom^^Setrique
+ []
+
+[6] [7] [8]
+Overfull \hbox (3.19794pt too wide) in paragraph at lines 222--222
+[]\OT1/cmr/bx/n/10 Formule des prob-a-bilit^^Ses com-pos^^Sees : \OT1/cmr/m/n/1
+0 Soit $\OML/cmm/m/it/10 A[]; [] ; A[]$ \OT1/cmr/m/n/10 des ^^Sev^^Senements
+ []
+
+
+Overfull \hbox (2.68102pt too wide) detected at line 222
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 \ [] \
+ \OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 A[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m
+/it/10 A[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/
+10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A[]
+ \OMS/cmsy/m/n/10 \ \OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 ) [] \OML/cmm/m/it/10 P
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A[] \OM
+S/cmsy/m/n/10 \ [] \ \OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 )
+ []
+
+[9{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+Overfull \hbox (3.19794pt too wide) in paragraph at lines 228--229
+[]\OT1/cmr/bx/n/10 Formule des prob-a-bilit^^Ses com-pos^^Sees : \OT1/cmr/m/n/1
+0 Soit $\OML/cmm/m/it/10 A[]; [] ; A[]$ \OT1/cmr/m/n/10 des ^^Sev^^Senements
+ []
+
+
+Overfull \hbox (2.68102pt too wide) detected at line 229
+\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[] \OMS/cmsy/m/n/10 \ [] \
+ \OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OM
+L/cmm/m/it/10 A[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 (\OML/cmm/m
+/it/10 A[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 )\OML/cmm/m/it/
+10 P\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A[]
+ \OMS/cmsy/m/n/10 \ \OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 ) [] \OML/cmm/m/it/10 P
+\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 A[]\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 A[] \OM
+S/cmsy/m/n/10 \ [] \ \OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 )
+ []
+
+
+Overfull \hbox (6.25623pt too wide) in paragraph at lines 250--251
+[]\OT1/cmr/bx/n/10 In^^Segalit^^Se de Bi-en-aym^^Se-Tchebychev : \OT1/cmr/m/n/1
+0 Soit $\OML/cmm/m/it/10 X$ \OT1/cmr/m/n/10 une vari-able al^^Seatoire
+ []
+
+[10] [11] (./sansnom-2.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 1729 strings out of 474175
- 26778 string characters out of 5749697
- 1935460 words of memory out of 5000000
- 24060 multiletter control sequences out of 15000+600000
- 563558 words of font info for 56 fonts, out of 8000000 for 9000
+ 1739 strings out of 474175
+ 27000 string characters out of 5749697
+ 1939460 words of memory out of 5000000
+ 24068 multiletter control sequences out of 15000+600000
+ 563893 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,7n,65p,253b,235s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 56i,7n,65p,417b,327s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2023
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2023/texmf-di
@@ -186,13 +239,15 @@ type1/public/amsfonts/cm/cmmi5.pfb><c:/texlive/2023/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmmi7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfont
 s/cm/cmr10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
 .pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><c:/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on sansnom-2.pdf (6 pages, 156646 bytes).
+exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb><c:/texlive/2023
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2023/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public
+/cm-super/sfrm1000.pfb>
+Output written on sansnom-2.pdf (11 pages, 204078 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 50 compressed objects within 1 object stream
+ 111 PDF objects out of 1000 (max. 8388607)
+ 69 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

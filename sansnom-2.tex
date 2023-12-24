@@ -34,6 +34,12 @@
 	\item \underline{Théorème de la base incomplète} : Toute famille libre fini d'un EV de dimension fini peut être complété en une base de cet EV
 	\item \underline{Théorème de la base extraite} : Toutes familles génératrice finie d'un EV fini on peut extraire une base de cet EV
 	\item Toute espace euclidien possède une base orthonormée
+	\item \textbf{Formule de Leibniz pour les polynômes :} Pour \( P, Q \in K[X] \) et \( n \in N \), alors \[ (PQ)^{(n)} = \sum_{k=0}^{n} \binom{n}{k} P^{(k)}Q^{(n-k)} \].
+	\item \textbf{Formule de Taylor pour les polynômes :} Pour \( P \in K[X] \) et \( a \in K \), alors \[ P(X) = \sum_{n \geq 0} \frac{P^{(n)}(a)}{n!}(X - a)^n \].
+	\item \textbf{Théorème (division euclidienne des polynômes) :} Soient \( A, B \in K[X] \) avec \( B \) non nul. Il existe un unique couple \( (Q, R) \in K[X] \) tel que \( A = BQ + R \) et \( \deg(R) < \deg(B) \).
+
+
+
 \end{itemize}
 
 \subsection{Caractérisations sur l'inversibilité d'une matrice}
@@ -130,9 +136,128 @@ A et B sont semblables \underline{SI ET SEULEMENT SI} :
 
 \section{Analyse}
 
+\subsection{Propriétés non triées encore}
+
+\begin{itemize}[label=$\ast$]
+	\item \( \sum_{k=1}^{n}k = \frac{n(n+1)}{2} \)
+	\item \underline{Somme des termes d'une suite arithmétique} : Soit \( (u_k)_{k \in N} \) une suite arithmétique. Alors pour \( (p,n) \in N^2 \) tel que \( p \leq n \), : \(  \sum_{k=p}^{n}u_k = (n-p+1) \frac{u_p + u_n}{2} \)
+	\item Pour \(n \in N \) : \( \sum_{k=1}^n k^2 = \frac{n(n+1)(2n+1)}{6} \)
+	\item \underline{Somme des termes d'une suite géométrique} : Soit \((u_n)_{n \in N} \) une suite géométrique de raison \( a \neq 1\). Alors \( \forall (p,n) \in N^2 \) tel que \(p \leq n \) : \( \sum_{n=p}^n u_k = \frac{u_p - u_{n+1}}{1-a} \)
+	\item \underline{Relation de Pascal} : \( \forall{(n,p) \in N* \times Z} : \binom{n}{p} = \binom{n-1}{p} + \binom{n-1}{p-1} \)
+	\item \underline{Symétrie du coefficient binomial} : \( \forall{(n,p) \in N \times Z} : \binom{n}{p} = \binom{n}{n-p} \)
+	\item \underline{Formule du binôme de Newton} : soit \((a,b) \in R^2\) et \(n \in N\) : \((a+b)^n = \sum_{p=0}n \binom{n}{p}a^p b^{n-p} \)
+	\item Toute partie non vide et majorée (resp. minorée) de R possède une borne supérieure (resp. inférieure)
+	\item \underline{Caractérisation de la borne supérieure} : Soit A une partie de R et \(a \in R \). Alors on a a = Sup(A) \underline{si, et seulement si} : \( \forall x \in A, x \leq a\) et \( \forall b<a, \exists x \in A, b<x \)
+	\item \underline{Théorème des suites adjacentes} : Si deux suites sont adjacentes, alors elles convergent vers une limite commune
+	\item \underline{Théorème de Bolzano Weierstrass} : Toute suite bornée possède au moins une sous-suite convergente
+ 	\item Une partei A de R est dense dans R, \underline{si, et seulement si}, pour tout réel x, on peut trouver une suite d'éléments de A qui convergent vers x
+	\item L'ensemble des suites bornées est stable par somme et par produit
+	\item Toute suite convergente est bornée
+	\item \textbf{Fonction \( k \)-lipschitzienne} : Soit \( f: I \to R \) une fonction et \( k \in R^+ \). Alors \( f \) est \( k \)-lipschitzienne si et seulement si pour tout \( x, y \in I \), on a : \( |f(x) - f(y)| \leq k |x - y| \).
+	\item \underline{Formule d'intégration par parties} : \( \forall u, v \in C^1(\mathcal{I}), \quad \int u \, dv = uv - \int v \, du \)
+	\item \underline{Formule de Taylor avec reste intégrale} : \( f(x) = \sum_{k=0}^{n} \frac{f^{(k)}(a)}{k!}(x-a)^k + \int_{a}^{x} \frac{f^{(n+1)}(t)}{(n)!}(x-t)^{n} \, dt \)
+	\item \underline{inégalité de Taylor Lagrange} : 
+	\item \textbf{Limite en un point :} Soit \( f: I \rightarrow R \) une fonction, \( a \) un point de \( I \) ou une extrémité de \( I \), et \( \ell \in R \). On dit que \( f \) admet pour limite \( \ell \) en \( a \) si pour tout \( \epsilon > 0 \), il existe \( \eta > 0 \) tel que pour tout \( x \in I \) avec \( |x - a| < \eta \), on a \( |f(x) - \ell| < \epsilon \).
+
+	\item \textbf{Limite en \( +\infty \) :} Soit \( f: I \rightarrow R \) une fonction, \( a \) une extrémité de \( I \). On dit que \( f \) admet pour limite \( +\infty \) en \( a \) si pour tout \( M > 0 \), il existe \( \eta > 0 \) tel que pour tout \( x \in I \) avec \( |x - a| < \eta \), on a \( f(x) > M \).
+
+	\item \textbf{Limite en \( +\infty \) :} Soit \( f: [a, +\infty[ \rightarrow R \) et \( \ell \in R \). On dit que \( f \) admet pour limite \( \ell \) en \( +\infty \) si pour tout \( \epsilon > 0 \), il existe \( A > 0 \) tel que pour tout \( x \in [a, +\infty[ \) avec \( x \geq A \), on a \( |f(x) - \ell| < \epsilon \).
+
+	\item \textbf{Limite en \( +\infty \) :} Soit \( f: [a, +\infty[ \rightarrow R \). On dit que \( f \) admet pour limite \( +\infty \) en \( +\infty \) si pour tout \( M > 0 \), il existe \( A > 0 \) tel que pour tout \( x \in [a, +\infty[ \) avec \( x \geq A \), on a \( f(x) > M \).
+
+	\item \textbf{Théorème (caractérisation séquentielle de la limite) :} 
+Une fonction \( f \) admet pour limite \( \ell \) en \( a \) si et seulement si, pour toute suite \( (x_n) \) qui converge vers \( a \), la suite \( (f(x_n)) \) converge vers \( \ell \).
+
+	\item Si une fonction est dérivable en un point, alors elle est continue en ce point
+
+	\item \textbf{Théorème de Rolle :} Soit \( f : [a, b] \rightarrow R \) une fonction continue sur \([a, b]\), dérivable sur \((a, b)\) et telle que \(f(a) = f(b)\). Alors il existe \(c\) appartenant à \((a, b)\) tel que \(f'(c) = 0\).
+
+	\item \textbf{Théorème des accroissements finis :} Soit \( f : [a, b] \rightarrow R \) une fonction continue sur \([a, b]\) et dérivable sur \((a, b)\). Alors il existe \( c \) appartenant à \((a, b)\) tel que
+\[ f(b) - f(a) = f'(c)(b - a) \].
+
+	\item \textbf{Inégalité des accroissements finis :} Soit \( f : [a, b] \rightarrow R \) une fonction continue sur \([a, b]\) et dérivable sur \((a, b)\). Supposons qu'il existe \( M > 0 \) tel que, pour tout \( t \in ]a, b[ \), \( |f'(t)| \leq M \). Alors :
+\[ |f(b) - f(a)| \leq M|b - a| \].
+
+	\item \textbf{Formule de Leibniz :} Soient \( f \) et \( g \) deux fonctions \( n \) fois dérivables sur \( I \). Alors \( fg \) est \( n \) fois dérivable sur \( I \) et
+\[ (fg)^{(n)} = \sum_{k=0}^{n} \binom{n}{k} f^{(n-k)}g^{(k)} \].
+
+	\item \textbf{Définition de la convexité :} Une fonction \( f \) est dite convexe si, pour tous \( x, y \in I \) et tout \( \lambda \in [0, 1] \), on a
+\[ f(\lambda x + (1-\lambda)y) \leq \lambda f(x) + (1-\lambda)f(y) \].
+
+	\item \textbf{Théorème (inégalité des pentes) :} Soit \( f : I \rightarrow R \). Les assertions suivantes sont équivalentes :
+1. \( f \) est convexe sur \( I \).
+2. Pour tout \( a \in I \), la fonction \( x \mapsto f(x) - f(a)(x - a) \) est croissante sur \( I \setminus \{a\} \).
+3. Pour tous \( a, b, c \in I \) avec \( a < b < c \), on a
+   \[ f(b) - f(a) \frac{b - a}{b - c} \leq f(c) - f(a) \frac{c - a}{b - c} \leq f(c) - f(b) \frac{c - b}{b - c}. \]
+
+	\item \textbf{Théorème (inégalité de Jensen) :} Une fonction \( f \) est convexe si et seulement si, pour tout \( n \geq 2 \), pour tous \( x_1, \ldots, x_n \in I \) et pour tous les réels \( \lambda_1, \ldots, \lambda_n \) de \( [0, 1] \) tels que \( \sum_{i=1}^{n} \lambda_i = 1 \), alors
+\[ f\left(\sum_{i=1}^{n} \lambda_i x_i\right) \leq \sum_{i=1}^{n} \lambda_i f(x_i) \].
+
+
+
+
+
+\end{itemize}
 
 
 \section{Probabilité}
+	
+Soient \( E \) et \( F \) deux ensembles finis. Alors
+
+\begin{itemize}
+	\item Si \( E \subseteq F \), on a \( \text{card}(E) \leq \text{card}(F) \), avec égalité si et seulement si \( E = F \).
+	\item \( \text{card}(E \times F) = \text{card}(E) \times \text{card}(F) \).
+	\item \( \text{card}(E \cup F) = \text{card}(E) + \text{card}(F) - \text{card}(E \cap F) \).
+	\item Le cardinal des applications de \( E \) dans \( F \) vaut \( (\text{card} \, F)^{\text{card}(E)} \).
+	\item \( \text{card}(\mathcal{P}(E)) = 2^{\text{card}(E)} \).
+	\item $P(\emptyset) = 0;$
+	\item Pour tout $A \in \mathcal{P}(\Omega)$, $P(\overline{A}) = 1 - P(A);$
+	\item Pour tous $A, B \in \mathcal{P}(\Omega)$, $A \subset B \Rightarrow P(A) \leq P(B);$
+ 	\item Pour tous $A, B \in \mathcal{P}(\Omega)$, $P(A \cup B) = P(A) + P(B) - P(A \cap B);$
+	\item Pour toute famille $A_1, \ldots, A_p$ d'événements deux à deux incompatibles, $P(A_1 \cup \cdots \cup A_p) = P(A_1) + \cdots + P(A_p);$
+	\item Pour tout système complet d'événements $A_1, \ldots, A_p$, $P(A_1 \cup \cdots \cup A_p) = 1.$
+	\item Si \( A_1, \ldots, A_n \) sont des événements mutuellement indépendants, et si pour chaque \( i \in \{1, \ldots, n\} \), on pose \( B_i = A_i \) ou \( B_i = \overline{A_i} \), alors les événements \( B_1, \ldots, B_n \) sont mutuellement indépendants.
+	\item \textbf{Proposition :} Si \( B \) est un événement tel que \( P(B) > 0 \), alors \( P_B \) est une probabilité sur \( \Omega \).
+
+	\item \textbf{Formule des probabilités composées :} Soit \( A_1, \ldots, A_m \) des événements tels que \( P(A_1 \cap \cdots \cap A_{m-1}) \neq 0 \). Alors : \[ P(A_1 \cap \cdots \cap A_m) = P(A_1) P(A_2 | A_1) P(A_3 | A_1 \cap A_2) \cdots P(A_m | A_1 \cap \cdots \cap A_{m-1}) \].
+	\item \textbf{Formule des probabilités totales :} Soit \( A_1, \ldots, A_n \) un système complet d'événements, tous de probabilité non nulle. Soit \( B \) un événement. Alors :
+\[ P(B) = \sum_{i=1}^{n} P(A_i) P(B | A_i) \].
+	\item \textbf{Formule de Bayes pour deux événements :} Si \( A \) et \( B \) sont deux événements de probabilité non nulle, alors
+\[ P(A | B) = \frac{P(B | A) P(A)}{P(B)} \].
+	\item \textbf{Proposition :} Si \( B \) est un événement tel que \( P(B) > 0 \), alors \( P_B \) est une probabilité sur \( \Omega \).
+	\item \textbf{Formule des probabilités composées :} Soit \( A_1, \ldots, A_m \) des événements tels que \( P(A_1 \cap \cdots \cap A_{m-1}) \neq 0 \). Alors :
+\[ P(A_1 \cap \cdots \cap A_m) = P(A_1) P(A_2 | A_1) P(A_3 | A_1 \cap A_2) \cdots P(A_m | A_1 \cap \cdots \cap A_{m-1}) \].
+
+	\item \textbf{Formule des probabilités totales :} Soit \( A_1, \ldots, A_n \) un système complet d'événements, tous de probabilité non nulle. Soit \( B \) un événement. Alors :
+\[ P(B) = \sum_{i=1}^{n} P(A_i) P(B | A_i) \].
+
+	\item Si \( X \) et \( Y \) sont indépendantes, alors \( E(XY) = E(X) E(Y) \).
+    \item \( V(X) = E(X^2) - E(X)^2 \);
+    \item \( V(aX + b) = a^2 V(X) \).
+
+
+
+
+\textbf{Propriétés des probabilités :}
+\begin{enumerate}
+    \item \( P(\emptyset) = 0 \);
+    \item Pour tout \( A \in \mathcal{P}(\Omega) \), \( P(\overline{A}) = 1 - P(A) \);
+    \item Pour tous \( A, B \in \mathcal{P}(\Omega) \), \( A \subseteq B \implies P(A) \leq P(B) \);
+    \item Pour tous \( A, B \in \mathcal{P}(\Omega) \), \( P(A \cup B) = P(A) + P(B) - P(A \cap B) \);
+    \item Pour toute famille \( A_1, \ldots, A_p \) d'événements deux à deux incompatibles, 
+          \( P(A_1 \cup \cdots \cup A_p) = P(A_1) + \cdots + P(A_p) \);
+    \item Pour tout système complet d'événements \( A_1, \ldots, A_p \), \( P(A_1 \cup \cdots \cup A_p) = 1 \).
+	\item \textbf{Inégalité de Bienaymé-Tchebychev :} Soit \( X \) une variable aléatoire réelle et soit \( \epsilon > 0 \). Alors 
+\[ P(|X - E(X)| \geq \epsilon) \leq \frac{V(X)}{\epsilon^2} \].
+	\item \textbf{Inégalité de Markov :} Soit \( X \) une variable aléatoire réelle et soit \( t > 0 \). Alors
+\[ P(|X| \geq t) \leq \frac{|E(X)|}{t} \].
+
+\end{enumerate}
+
+
+
+\end{itemize}
+
 
 
 
