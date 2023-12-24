@@ -1,5 +1,0 @@
-\contentsline {chapter}{\numberline {1}Algèbre}{5}{}%
-\contentsline {section}{\numberline {1.1}Propriétés sur les inverses d'une matrice}{5}{}%
-\contentsline {subsection}{\numberline {1.1.1}}{6}{}%
-\contentsline {chapter}{\numberline {2}Développement}{7}{}%
-\contentsline {section}{\numberline {2.1}Une Autre Section}{7}{}%
