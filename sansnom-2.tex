@@ -4,6 +4,8 @@
 \usepackage{amsmath}
 \usepackage[normalem]{ulem}
 \usepackage{eurosym}
+\usepackage{amsfonts}
+\usepackage{amssymb}
 
 \title{Cours de maths synthétique (pour \sout{X/ENS} CCINP/CENTRALE/MINES)}
 
@@ -37,6 +39,164 @@
 	\item \textbf{Formule de Leibniz pour les polynômes :} Pour \( P, Q \in K[X] \) et \( n \in N \), alors \[ (PQ)^{(n)} = \sum_{k=0}^{n} \binom{n}{k} P^{(k)}Q^{(n-k)} \].
 	\item \textbf{Formule de Taylor pour les polynômes :} Pour \( P \in K[X] \) et \( a \in K \), alors \[ P(X) = \sum_{n \geq 0} \frac{P^{(n)}(a)}{n!}(X - a)^n \].
 	\item \textbf{Théorème (division euclidienne des polynômes) :} Soient \( A, B \in K[X] \) avec \( B \) non nul. Il existe un unique couple \( (Q, R) \in K[X] \) tel que \( A = BQ + R \) et \( \deg(R) < \deg(B) \).
+	\item \textbf{Propriétés des matrices :} Soient \( A, B \in GL_n(K) \).
+\begin{enumerate}
+    \item Si \( AB \in GL_n(K) \), alors \( (AB)^{-1} = B^{-1}A^{-1} \).
+    \item Si \( A^T \in GL_n(K) \), alors \( (A^T)^{-1} = (A^{-1})^T \).
+\end{enumerate}
+
+\item \textbf{Caractérisation des sous-espaces vectoriels :} Une partie \( F \) de \( E \) est un sous-espace vectoriel de \( E \) si et seulement si les trois propriétés suivantes sont vérifiées :
+\begin{enumerate}
+    \item \( \mathbf{0}_E \in F \) ;
+    \item Pour tout \( (x, y) \in F^2 \), \( x + y \in F \) ;
+    \item Pour tout \( x \in F \) et tout \( \lambda \in K \), \( \lambda \cdot x \in F \).
+\end{enumerate}
+
+\item \textbf{Relation entre les espaces vectoriels :} Si \(X\) et \(Y\) sont deux familles de vecteurs de \(E\), alors \[ \text{vect}(X) + \text{vect}(Y) = \text{vect}(X \cup Y). \]
+
+\item \textbf{Sous-espaces en somme directe :} Deux sous-espaces \(F\) et \(G\) sont en somme directe si et seulement si \(F \cap G = \{0\}\).
+
+\item \textbf{Théorème de la base extraite} :
+\item \textbf{Théorème de la base incomplète} : 
+\item Tout SEV d'un espace de dimension finie admet un supplémentaire
+
+\item \textbf{Formule de Grassmann :} Soit \(E\) un espace vectoriel de dimension finie et \(F\) et \(G\) deux sous-espaces vectoriels de \(E\). Alors \[ \text{dim}(F + G) = \text{dim}(F) + \text{dim}(G) - \text{dim}(F \cap G). \] En particulier, \(F\) et \(G\) sont en somme directe si et seulement si \(\text{dim}(F + G) = \text{dim}(F) + \text{dim}(G)\).
+
+\item \textbf{Injectivité d'une application linéaire :} Une application linéaire \(f \in \mathcal{L}(E, F)\) est injective si et seulement si \(\text{ker}(f) = \{0\}\).
+
+\item \textbf{Caractérisation des projections :} Un endomorphisme \(p \in \mathcal{L}(E)\) est une projection si et seulement si \(p \circ p = p\). L'application \(p\) est alors la projection sur \(\text{Im}(p)\) parallèlement à \(\text{ker}(p)\).
+
+\item \textbf{Relation entre une famille génératrice et l'image d'une application linéaire :} Si \((x_i)_{i \in I}\) est une famille génératrice de \(E\), alors \(\text{Im}(f) = \text{vect}\{f(x_i) \; | \; i \in I\}\).
+
+\item \textbf{Caractérisation des symétries :} Un endomorphisme \(s \in \mathcal{L}(E)\) est une symétrie si et seulement si \(s \circ s = \text{Id}_E\). L'application \(s\) est alors la symétrie par rapport à \(\text{ker}(s - \text{Id}_E)\) parallèlement à \(\text{ker}(s + \text{Id}_E)\).
+
+\item \textbf{Théorème :} Soit \((e_i)_{i \in I}\) une base de \(E\) et soit \((f_i)_{i \in I}\) une famille de vecteurs de \(F\). Alors il existe un unique \(u \in \mathcal{L}(E, F)\) tel que \(u(e_i) = f_i\) pour tout \(i \in I\). De plus, les propriétés suivantes sont équivalentes :
+\begin{enumerate}
+    \item \(u\) est injective si et seulement si \((f_i)_{i \in I}\) est une famille libre de \(F\).
+    \item \(u\) est surjective si et seulement si \((f_i)_{i \in I}\) est une famille génératrice de \(F\).
+    \item \(u\) est bijective si et seulement si \((f_i)_{i \in I}\) est une base de \(F\).
+\end{enumerate}
+
+\item \textbf{Proposition :} Soit \(u \in \mathcal{L}(E, F)\) et \(v \in \mathcal{L}(F, G)\) de rang fini. Alors \(v \circ u\) est de rang fini avec \[ \text{rg}(v \circ u) \leq \min(\text{rg}(u), \text{rg}(v)). \] De plus, si \(u\) est un isomorphisme, \(\text{rg}(v \circ u) = \text{rg}(v)\); si \(v\) est un isomorphisme, \(\text{rg}(v \circ u) = \text{rg}(u)\).
+
+\item \textbf{Proposition :} Supposons que \(E\) et \(F\) sont de dimension finie avec \(\text{dim}(E) = \text{dim}(F)\). Soit \(u \in \mathcal{L}(E, F)\). Alors les assertions suivantes sont équivalentes :
+\begin{enumerate}
+  \item \(u\) est injective.
+  \item \(u\) est surjective.
+  \item \(u\) est bijective.
+\end{enumerate}
+
+\item \textbf{Proposition :} Si \(E\) et \(F\) sont de dimension finie, alors les deux affirmations suivantes sont équivalentes :
+\begin{enumerate}
+  \item Il existe un isomorphisme \(u \in \mathcal{L}(E, F)\).
+  \item \(\text{dim}(E) = \text{dim}(F)\).
+\end{enumerate}
+
+\item Deux formes linéaires non nulles ont même noyau \underline{si et seulement si} elles sont proportionnelles
+
+\item \textbf{Relation Matricielle :} Soient \(u \in \mathcal{L}(E, F)\) et \(v \in \mathcal{L}(F, G)\), alors la composée \(v \circ u\) correspond au produit de matrices : \[ \text{Mat}(B, D)(v \circ u) = \text{Mat}(C, D)(v) \cdot \text{Mat}(B, C)(u) \] 
+
+\item \textbf{Formule de Changement de Base pour les Applications Linéaires :} Soit \(u \in \mathcal{L}(E, F)\), \(B\) et \(B'\) deux bases de \(E\), \(C\) et \(C'\) deux bases de \(F\). Alors, en notant \(A = \text{Mat}(B, C)(u)\), \(B = \text{Mat}(B', C')(u)\), \(P = P_{B \to B'}\), \(Q = P_{C \to C'}\), on a \(B = Q^{-1} A P\). En particulier, si \(u\) est un endomorphisme, si \(A = \text{Mat}(B, B)(u)\), \(B = \text{Mat}(B', B')(u)\), \(P = P_{B \to B'}\), alors \(B = P^{-1} A P\).
+
+\item Soit $(x_1, \ldots, x_p)$ une famille orthogonale. Alors  \[ \left\|\sum_{k=1}^{p} x_k \right\|^2 = \sum_{k=1}^{p} \|x_k\|^2. \]
+
+\item Si $(e_1, \ldots, e_p)$ est une base orthonormée de $F$, alors  \[ P_F(x) = \sum_{i=1}^{p} \langle x, e_i \rangle e_i. \]
+
+\item Théorème (distance à un sous-espace de dimension finie): Pour tout $x \in E$ et tout $f \in F$, on a \[\| x - f \| \geq \| x - P_F(x) \| \]avec égalité si et seulement si $f = P_F(x)$. En particulier, \[d(x, F) = \| x - P_F(x) \| = \sqrt{\| x \|^2 - \| P_F(x) \|^2}.\]
+
+\item Théorème: On suppose que $E$ est de dimension finie. Soit $H$ un hyperplan de $E$ et $u$ un vecteur normal à $H$. Alors, pour tout $x \in E$, on a \[P_H(x) = x - \frac{\langle x, u \rangle}{\| u \|^2} u.\]En particulier, \[d(x, H) = \frac{|\langle x, u \rangle|}{\| u \|}.\]
+
+\item Deux sous-espaces $F$ et $G$ sont en somme directe si et seulement si \[F \cap G = \{0\}.\]
+
+\item Si $F_1, \ldots, F_r$ sont des sous-espaces de dimension finie de $E$, alors \[\dim\left(\sum_{i=1}^{r} F_i\right) \leq \sum_{i=1}^{r} \dim(F_i)\]avec égalité si et seulement si la somme est directe.
+
+\item Si $u$ et $v$ commutent, alors $\text{Im}(u)$ et $\text{ker}(u)$ sont stables par $v$.
+
+\item Si $\lambda_1, \ldots, \lambda_p$ sont des valeurs propres distinctes de $u$, alors les sous-espaces propres associés $E_{\lambda_1}, \ldots, E_{\lambda_p}$ sont en somme directe.
+
+\item Deux matrices semblables ont le même polynôme caractéristique
+
+\item Le polynôme caractéristique de \(A\) est un polynôme unitaire qui s'écrit \[\chi_A(X) = X^n - \text{tr}(A)X^{n-1} + \cdots + (-1)^n\det(A).\]
+
+\item Les racines du polynôme caractéristique de $A$ (resp. $u$) sont exactement les valeurs propres de $A$ (resp. $u$).
+
+\item Pour tout $\lambda \in \text{Sp}(u)$, on a \[\dim(E_{\lambda}) \leq \text{mult}(\lambda).\]
+
+\item Soit $u \in \mathcal{L}(E)$. Les assertions suivantes sont équivalentes :
+\begin{enumerate}
+    \item $u$ est diagonalisable.
+    \item La somme des sous-espaces propres de $u$ est égale à $E$.
+    \item $\sum_{\lambda \in \text{Sp}(u)} \dim(E_{\lambda}) = \dim(E)$.
+\end{enumerate}
+
+\item Un opérateur $u \in \mathcal{L}(E)$ est diagonalisable si et seulement si le polynôme caractéristique $\chi_u$ est scindé et si, pour toute valeur propre $\lambda$, on a \[\dim(E_{\lambda}) = \text{mult}(\lambda).\]
+
+\item Un endomorphisme de $E$ admettant $n$ valeurs propres distinctes est diagonalisable.
+
+\item Une matrice $A \in M_n(K)$ est diagonalisable si et seulement si $A$ est semblable à une matrice diagonale.
+
+\item Soit $u \in \mathcal{L}(E)$. Les assertions suivantes sont équivalentes :
+\begin{enumerate}
+    \item $u$ est nilpotent.
+    \item Le polynôme caractéristique $\chi_u(X) = X^n$.
+    \item Il existe une base de $E$ dans laquelle la matrice de $u$ est triangulaire supérieure avec des zéros sur la diagonale.
+\end{enumerate}
+
+\item Une matrice $A \in M_n(K)$ est nilpotente si et seulement si $A$ est semblable à une matrice triangulaire supérieure avec des zéros sur la diagonale.
+
+\item Un projecteur de $E$ est autoadjoint si et seulement si c'est un projecteur orthogonal.
+
+
+\item Théorème spectral: Soit $u \in \mathcal{L}(E)$. Les propriétés suivantes sont équivalentes :
+\begin{enumerate}
+    \item $u$ est autoadjoint.
+    \item $E$ est la somme directe orthogonale des sous-espaces propres de $u$.
+    \item Il existe une base orthonormale de $E$ constituée de vecteurs propres pour $u$.
+\end{enumerate}
+
+\item Corollaire du théorème spectral: Soit $M \in M_n(\mathbb{R})$. Alors $M$ est symétrique si et seulement s'il existe une matrice orthogonale $P$ et une matrice diagonale $D$ telle que $M = PDP^T$.
+
+\item Proposition: Soit $u \in \mathcal{S}(E)$. On a les équivalences suivantes :
+\begin{itemize}
+    \item $u \in \mathcal{S}_+(E) \iff \text{Sp}(u) \subset \mathbb{R}_+$.
+    \item $u \in \mathcal{S}_{++}(E) \iff \text{Sp}(u) \subset \mathbb{R}_*^+$.
+\end{itemize}
+
+\item 
+Soit $u \in \mathcal{L}(E)$. Les assertions suivantes sont équivalentes :
+\begin{enumerate}
+    \item $u$ est une isométrie vectorielle.
+    \item $u$ conserve le produit scalaire : $\forall (x, y) \in E^2, \quad \langle u(x), u(y) \rangle = \langle x, y \rangle$.
+    \item $u$ est inversible et $u^{-1} = u^*$.
+    \item L'image d'une base orthonormée de $E$ par $u$ est une base orthonormée.
+    \item La matrice de $u$ dans une base orthonormée est une matrice orthogonale.
+\end{enumerate}
+
+Soit $A \in M_2(\mathbb{R})$. Alors :
+\begin{itemize}
+    \item $A \in SO_2(\mathbb{R})$ si et seulement s'il existe $\theta \in \mathbb{R}$ tel que\[A = \begin{pmatrix}\cos(\theta) & -\sin(\theta) \\\sin(\theta) & \cos(\theta)\end{pmatrix}. \]  \item $A \in O_2(\mathbb{R}) \setminus SO_2(\mathbb{R})$ si et seulement s'il existe $\theta \in \mathbb{R}$ tel que \[A = \begin{pmatrix}
+ \cos(\theta) & \sin(\theta) \\
+    \sin(\theta) & -\cos(\theta)
+    \end{pmatrix}.
+    \]
+\end{itemize}
+
+\item Soit $E$ un espace euclidien orienté de dimension $3$ et $u \in SO(E)$. Il existe une base orthonormée directe $B$ de $E$ telle que
+\[
+\text{Mat}_B(u) = \begin{pmatrix}
+1 & 0 & 0 \\
+0 & \cos(\theta) & -\sin(\theta) \\
+0 & \sin(\theta) & \cos(\theta)
+\end{pmatrix}.
+\]
+En particulier, il existe une droite $D$ et un plan $P$ orthogonal à $D$ tel que $u|_D = \text{Id}_D$ et $u|_P$ est une rotation d'angle $\theta$. On dit alors que $u$ est la rotation d'axe $D$ et d'angle $\theta$.
+
+
+
+
+
+
+
 
 
 
@@ -72,7 +232,8 @@ A et B sont semblables \underline{SI ET SEULEMENT SI} :
 
 \subsection{Formules à connaitre}
 \begin{itemize}[label=$\ast$]
-	\item Pour \( (A,B) \in M_n(K)^2 \) tel que \(AB = BA\), on a pour tout, \(p \in N\) : \((A+B)^p = \sum_{k=0}^{p} \binom{n}{k} A^k B^{p-k} \) et \(A^p - B^p = (A-B) \sum_{k = 0}^{p-1}A^kB^{p-1-k}\)
+	\item \textbf{Formule du binôme pour les matrices :} Si \( A, B \in M_n(K) \) sont telles que \( AB = BA \), alors \[ (A + B)^n = \sum_{k=0}^{n} \binom{n}{k} A^k B^{n-k} \].
+
 \end{itemize}
 
 \subsection{Propriété sur les dimensions}
