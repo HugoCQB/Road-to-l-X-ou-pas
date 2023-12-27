@@ -7,6 +7,11 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 
+#PACKAGE ILLUSTRATION
+\usepackage{tikz}
+\usetikzlibrary{3d,calc}
+
+
 \title{Cours de maths synthétique (pour \sout{X/ENS} CCINP/CENTRALE/MINES)}
 
 \author{Crée par des gens de la PSI de Claude B}
@@ -106,6 +111,31 @@
 
 \item Théorème: On suppose que $E$ est de dimension finie. Soit $H$ un hyperplan de $E$ et $u$ un vecteur normal à $H$. Alors, pour tout $x \in E$, on a \[P_H(x) = x - \frac{\langle x, u \rangle}{\| u \|^2} u.\]En particulier, \[d(x, H) = \frac{|\langle x, u \rangle|}{\| u \|}.\]
 
+\begin{center} 
+\begin{tikzpicture}[scale=3,tdplot_main_coords,>=Stealth]
+
+    % Axes
+    \draw[->] (0,0,0) -- (1,0,0) node[anchor=north east]{$x$};
+    \draw[->] (0,0,0) -- (0,1,0) node[anchor=west]{$y$};
+    \draw[->] (0,0,0) -- (0,0,1) node[anchor=south]{$z$};
+
+    % Hyperplan H dans le plan xz
+    \filldraw[fill=blue!20,opacity=0.5] (-0.5,0,-0.5) -- (0.5,0,-0.5) -- (0.5,0,0.5) -- (-0.5,0,0.5) -- cycle;
+    \node at (0,0,0.3) {$H$};
+
+    % Vecteur u normal à H, orienté le long de l'axe y
+    \draw[->,thick] (0,0,0) -- (0,0.5,0) node[anchor=east]{$u$};
+
+    % Vecteur x dans E
+    \draw[->,thick] (0,0,0) -- (0.3,0.6,0.3) node[anchor=south east]{$x$};
+
+    % Projection PH(x) sur H
+    \draw[dashed] (0.3,0.6,0.3) -- (0.3,0,0.3);
+    \draw[->,thick,red] (0,0,0) -- (0.3,0,0.3) node[anchor=north]{$P_{H}(x)$};
+
+\end{tikzpicture}
+
+
 \item Deux sous-espaces $F$ et $G$ sont en somme directe si et seulement si \[F \cap G = \{0\}.\]
 
 \item Si $F_1, \ldots, F_r$ sont des sous-espaces de dimension finie de $E$, alors \[\dim\left(\sum_{i=1}^{r} F_i\right) \leq \sum_{i=1}^{r} \dim(F_i)\]avec égalité si et seulement si la somme est directe.
@@ -129,7 +159,32 @@
     \item $\sum_{\lambda \in \text{Sp}(u)} \dim(E_{\lambda}) = \dim(E)$.
 \end{enumerate}
 
-\item Un opérateur $u \in \mathcal{L}(E)$ est diagonalisable si et seulement si le polynôme caractéristique $\chi_u$ est scindé et si, pour toute valeur propre $\lambda$, on a \[\dim(E_{\lambda}) = \text{mult}(\lambda).\]
+\begin{center}
+Tout les polynomes caractéristiques sont annulateurs mais pas l'inverse !
+\end{center}
+
+\item Un opérateur $u \in \mathcal{L}(E)$ est diagonalisable dans \mathbb{R} ou \mathbb{C} si et seulement si le polynôme caractéristique $\chi_u$ est SDRS.
+
+\item Un opérateur $u \in \mathcal{L}(E)$ est diagonalisable dans \mathbb{R} si et seulement si le polynôme caractéristique $\chi_u$ est SD et si, pour toute valeur propre $\lambda$, on a \[\dim(E_{\lambda}) = \text{mult}(\lambda).\]
+
+\item Un opérateur $u \in \mathcal{L}(E)$ est diagonalisable dans \mathbb{R} ou \mathbb{C} si et seulement un polynôme annulateur est SDRS.
+
+\item Un opérateur $u \in \mathcal{L}(E)$ est TZ dans \mathbb{R} ou \mathbb{C} si et seulement si le polynôme caractéristique $\chi_u$ est SD.
+
+\item Un opérateur $u \in \mathcal{L}(E)$ est diagonalisable dans \mathbb{R} ou \mathbb{C} si et seulement si un polynôme annulateur est SD.
+
+\section*{Méthode}
+
+\subsection*{Diagonaliser effectivement une matrice \( A \)}
+\textit{Pour diagonaliser effectivement une matrice \( A \), on procède de la manière suivante :}
+
+\begin{enumerate}
+    \item \textit{On cherche ses valeurs propres, par exemple en calculant le polynôme caractéristique.}
+    \item \textit{Pour chaque valeur propre, on cherche une base de l'espace propre associé.}
+    \item \textit{On a alors \( A = PDP^{-1} \) où \( P \) est la matrice dont les colonnes sont constituées par la réunion des bases des espaces propres, et la matrice \( D \) est la matrice diagonale dont les coefficients sont les valeurs propres de \( A \), écrites dans le même ordre que les vecteurs colonnes de \( P \).}
+\end{enumerate}
+
+
 
 \item Un endomorphisme de $E$ admettant $n$ valeurs propres distinctes est diagonalisable.
 
